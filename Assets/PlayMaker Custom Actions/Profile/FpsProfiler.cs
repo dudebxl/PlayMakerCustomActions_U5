@@ -54,20 +54,19 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void Reset()
 		{
-			 FsmInt setRecommendedFps = 60;
-			 FsmInt setWarningFpsMin = 30;
-			 FsmInt setWarningFpsMax = 59;
-			 FsmInt setCriticalFpsMin = 0;
-			 FsmInt setCriticalFpsMax = 29;
+			setRecommendedFps = 60;
+			setWarningFpsMin = 30;
+			 setWarningFpsMax = 59;
+			 setCriticalFpsMin = 0;
+			 setCriticalFpsMax = 29;
 
-			FsmColor textColor = Color.white;
-			FsmColor normalFpsColor = new Color(0,205,0,255);
-			FsmColor warningFpsColor = new Color(254,195,65,255);
-			FsmColor criticalFpsColor = new Color(255,0,0,255);
+			textColor = Color.white;
+			normalFpsColor = new Color(0,205,0,255);
+			warningFpsColor = Color.magenta;
+			criticalFpsColor = new Color(255,0,0,255);
 
-			FsmBool forceQuit = false;
-			FsmBool enable = false;
-			FsmBool inclMemory = true;
+			forceQuit = false;
+			inclMemory = true;
 
 	
 		}
