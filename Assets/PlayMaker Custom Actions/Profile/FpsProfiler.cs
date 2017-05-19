@@ -14,13 +14,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[ActionSection("Fps Setup")]
 		public FsmInt setRecommendedFps;
-		public FsmInt setWarningFpsMin;
+		public FsmInt setWarningFpsMin; 
 		public FsmInt setWarningFpsMax;
 		public FsmInt setCriticalFpsMin;
 		public FsmInt setCriticalFpsMax;
 
 		[ActionSection("Color Setup")]
-		public FsmColor textColor;
 		public FsmColor normalFpsColor;
 		public FsmColor warningFpsColor;
 		public FsmColor criticalFpsColor;
@@ -61,7 +60,6 @@ namespace HutongGames.PlayMaker.Actions
 			 setCriticalFpsMin = 0;
 			 setCriticalFpsMax = 29;
 
-			textColor = Color.white;
 			normalFpsColor = new Color(0,205,0,255);
 			warningFpsColor = Color.magenta;
 			criticalFpsColor = new Color(255,0,0,255);
@@ -145,7 +143,7 @@ namespace HutongGames.PlayMaker.Actions
 				frames = 0;
 				lastInterval = timeNow;
 
-				if (inclMemory.Value = true)
+				if (inclMemory.Value == true)
 				{
 				memoryAllocation.Value = Convert.ToInt32( Profiler.GetTotalAllocatedMemory()/1048576);
 				totalMemory.Value = Convert.ToInt32(Profiler.GetTotalReservedMemory()/1048576);
