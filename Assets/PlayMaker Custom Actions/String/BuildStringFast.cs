@@ -91,7 +91,7 @@ namespace HutongGames.PlayMaker.Actions
 
 
 			storeResult.Value = ToString();
-		
+		Finish();
 		}
 
 		public void Append( string value )
