@@ -8,6 +8,7 @@ namespace HutongGames.PlayMaker.Actions
 
 	[ActionCategory("Profile")]
 	[Tooltip("Get the fps")]
+	[HelpUrl("http://hutonggames.com/playmakerforum/index.php?topic=15185.0")]
 	public class FpsProfiler : FsmStateAction
 	{
 		
