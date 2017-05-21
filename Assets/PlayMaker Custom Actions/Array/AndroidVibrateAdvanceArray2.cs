@@ -10,7 +10,7 @@ namespace HutongGames.PlayMaker.Actions
 	[ActionCategory(ActionCategory.Array)]
 	[Tooltip("Android - causes the device to vibrate with custom settings using array list for the pattern. Please read instruction by clicking on the action url link. If set incorrectly, you may get odd behavior as a result!")]
 	[HelpUrl("http://hutonggames.com/playmakerforum/index.php?topic=11816.0")]
-	public class AndroidVibrateAdvanceArray2 : ArrayListActions
+	public class AndroidVibrateAdvanceArray2 : FsmStateAction
 	{
 		
 		#if UNITY_ANDROID && !UNITY_EDITOR
